@@ -1,0 +1,162 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Data Visualization Project">
+    <meta name="author" content="Gitika Jain">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.2/vega-tooltip.css" rel="stylesheet">
+    <title>UIUC MCS-DS Final Project for CS498 - Data Visualization </title>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CS498 - Final Project</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="first.html">Home</a></li>
+            <li ><a href="second.html">Scene2</a></li>
+            <li ><a href="jumpoff.html">Scene3</a></li>
+            <li ><a href="final.html">Final</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+
+
+
+        <div class="container">
+
+          <div class="page-header">
+            <h1>Census 2011 India Data Analysis</h1>
+          </div>
+          <p class="lead">
+
+This dataset has been created by merging the census 2011 of Indian Cities with Population more than 1 Lac and City wise number of Graduates from the Census 2011. The Census is one of the biggest workout conducted by the Government of India to understand the demographics of the country. It is conducted every 10 years. The Britishers initiated it during the colonial times. It helps in a big way to come up with social and economic programs in the country. It also helps to identify the problems in the country. We can use this dataset to create a visualization to see where the future cities of India stand today.
+
+                          More information can be found </p>
+
+                         <div class="text-center">
+                         <a href="http://www.census2011.co.in" target="_blank">
+                                  <p class="lead">http://www.census2011.co.in</p></a>
+                         </div>
+          <p class="lead">
+                         There are presently 28 states in India. The total population of the country is 1.21 billion presently. According to the State Census 2011, the most populated state in India is Uttar Pradesh with a population of 19.96 crores. The least populated state in the country is Sikkim with a population of 60, 7688. The census of Indian states 2011 reveals that Kerala is the highest literate state in the country with 93.91% of literacy rate. Bihar is the least literate state with a literacy rate of 63.82%. The Indian census 2011 state wise shows that Kerala represents the highest sex ratio with 1084 females per 1000 males while Haryana features the lowest sex ratio in India with just 877 women per 1000 males.
+                         <br>
+
+                         </p>
+         <br>
+         <br>
+         <div class="container" id="vegaChart">
+
+           <div class="populationVis" id="populationVis">
+
+           </div>
+        </div>
+
+
+         <div class="container" id="aboutVisualization" style="padding-bottom: 30px;">
+           <button class="accordion">About the Visualization, Home Page</button>
+              <div class="panel" >
+                <p class="lead" >The project follows the <strong>Martini Glass</strong> narrative visualization structure.
+                The <strong>Home page</strong>  represents the base of the visualization structure. The user is being exposed
+                to the author driven content and will be led through two additional scenes representing stem. The Scene3
+                page is the "jumping off point" and leads user to the final page.
+                Final page contains reader driven content and it allows users to draw their own conclusions.
+                </p>
+                <p class="lead">The chart was built using Vega-lite.</p>
+                <h3>User Interface Events</h3>
+                <p class="lead" >The buttons in the navigation bar and the Prev, Next button
+                   at the bottom of this page enable the User Interface events.
+                   User interacts by clicking on the button or menu items to navigate to various part of this story.
+                </p>
+                <h3>Annotations</h3>
+                  <p class="lead" >The annotation is represented by the legend on the top-right of the chart.</p>
+                <h3>Triggers</h3>
+                <p class="lead" >The mouse click acts as a trigger event.
+                </p>
+                <h3>Parameters</h3>
+                <p class="lead" >This section is hyper linked to the next section. The name of the target section is passed
+                                 as an input paramter to the button and navgiation bar items.
+
+              </div>
+
+         </div>
+         <div class="container">
+           <div class="col-lg-12 text-center" >
+           <a href="second.html">
+           <button type="button" class="btn btn-default btn-lg btn-primary">
+             <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Next
+           </button></a>
+           </div>
+
+
+         </div>
+
+        </div><!-- /.container -->
+
+
+
+
+      <footer class="footer   text-center">
+        <div class="container">
+          <p class="text-muted"></p>
+          <strong>Author <a href="https://www.linkedin.com/in/akumar6/"  target="_blank">Gitika Jain</a></strong>
+        </div>
+
+      </footer>
+
+
+      <div id="myModal" class="modal hide fade">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> × </button>
+              <h3 id="myModalLabel">Modal header</h3>
+          </div>
+          <div class="modal-body">
+             <h1>This is the test page</h1>
+          </div>
+          <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+          </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-beta.38/vega.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.6/vega-lite.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.19/vega-embed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.2/vega-tooltip.min.js"></script>
+  <script src="lib/stem.js"></script>
+
+</body>
+</html>
