@@ -1,13 +1,17 @@
 /* Tooltip CSS */
    .d3-tip {
    line-height: 1.5;
-   font-weight: 400;
-   font-family:Georgia, "Times New Roman", Times, serif;
-   padding: 6px;
-   background: rgba(0, 0, 0, 0.6);
+    font: 12px sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
    color: #FFA500;
    border-radius: 1px;
    pointer-events: none;
+   padding: 5px;
+    text-align: center;
    }
 
    /* Creates a small triangle extender for the tooltip */
@@ -62,5 +66,5 @@
    }*/
 
    .details{
-     color:white;
+     color:black;
    }

@@ -38,7 +38,6 @@
                 <li><a href="second.html">Adult Population</a></li>
                 <li><a href="jumpoff.html">0 - 6 Population</a></li>
                 <li><a href="final.html">Analysis</a></li>
-                <li><a href="about.html">About Visualization</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -67,24 +66,36 @@
         <a href="http://www.census2011.co.in" target="_blank">
             <p class="lead">http://www.census2011.co.in</p></a>
     </div>
-    <p class="lead">
-        There are presently 28 states in India. The total population of the country is 1.21 billion presently. According
-        to the State Census 2011, the most populated state in India is Uttar Pradesh with a population of 19.96 crores.
-        The least populated state in the country is Sikkim with a population of 60, 7688. The census of Indian states
-        2011 reveals that Kerala is the highest literate state in the country with 93.91% of literacy rate. Bihar is the
-        least literate state with a literacy rate of 63.82%. The Indian census 2011 state wise shows that Kerala
-        represents the highest sex ratio with 1084 females per 1000 males while Haryana features the lowest sex ratio in
-        India with just 877 women per 1000 males.
-        <br>
+    
 
     </p>
-    <br>
-    <br>
-    <div class="container" id="vegaChart">
+ 
+   
+                         <div class="container" id="aboutVisualization">
+                           <div class="accordion"><h2>About the Visualization</h2></div>
+                                <p class="lead" >This visualization project is following the <strong>Martini Glass</strong> narrative visualization structure.
+                                Here first page provides the details about the dataset and visualization. The second and third page provide the overview of Adult and Child population of various states in the country. </p>
+                                <p class="lead" >The first three scenes provides the author driven content. </p>
+                                <p class="lead" >Analysis page contains reader driven content and it allows users to interact with data and draw their own conclusions.
+                                </p>
+                                <p class="lead">All the chart are built using d3.js</p>
+                                <h3>User Interface Events</h3>
+                                <p class="lead" >The navigation buttons at the top and the Next button
+                                   at the bottom of all page represent the User Interface events.
+                                   User interacts by clicking on the button or menu items to navigate to various part of this visualzation story.
+                                </p>
+                                <h3>Annotations</h3>
+                                  <p class="lead" >The annotation is represented by the legend on the top-right of the chart.</p>
+                                <h3>Triggers</h3>
+                                <p class="lead" >The mouse click event acts as a trigger to faciliate back and forward navigation in this visualization presentation.
+                                </p>
+                                <h3>Parameters</h3>
+                                <p class="lead" >This section is hyper linked to the previous and next section. The name of the target section is passed
+                                                 as an input paramter to the buttons and navgiation bar items.
 
-        <svg width="960" height="600"></svg>
+                              
 
-    </div>
+                         </div>
 
 
     <div class="container">
@@ -136,7 +147,6 @@
 <script src="lib/d3.v4.min.js" charset="utf-8"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
 
-<script src="lib/stem.js"></script>
 
 </body>
 </html>
